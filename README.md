@@ -5,6 +5,8 @@
 Very easy to use:
 
 ~~~
+from lr_finder import LR_Finder
+
 lr_finder = LR_Finder(model, criterion, torch.optim.Adam, dict(weight_decay=1e-4))
 lr_finder.find(x, y, epochs=100, start_lr=0.05, eps_lr=0.5, steps=5)
 ~~~
